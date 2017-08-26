@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.4" method="upgrade">
+	<name>JDeveloper</name>
+	<author>Tilo-Lars Flasche</author>
+	<creationDate>May 2014</creationDate>
+	<copyright>Tilo-Lars Flasche</copyright>
+	<license>GNU General Public License version 2 or later; see	LICENSE.txt</license>
+	<authorEmail>jcms.development@gmail.com</authorEmail>
+	<authorUrl>www.joommaster.bplaced.org</authorUrl>
+	<version>1.8.4.0</version>
+	<description>COM_JDEVELOPER_XML_DESCRIPTION</description>
+
+	<install> <!-- Runs on install -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall> <!-- Runs on uninstall -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates</schemapath>
+		</schemas>
+	</update>
+	<scriptfile>install.php</scriptfile>
+	<media destination="com_jdeveloper" folder="media">
+		<filename>index.html</filename>
+		<folder>images</folder>
+	</media>
+	<administration>
+		<menu link="index.php?option=com_jdeveloper">JDeveloper</menu>
+		<submenu>
+			<menu link="option=com_jdeveloper&amp;view=jdeveloper">JDeveloper</menu>
+			<menu link="option=com_jdeveloper&amp;view=components">Components</menu>
+			<menu link="option=com_jdeveloper&amp;view=modules">Modules</menu>
+			<menu link="option=com_jdeveloper&amp;view=templates">Templates</menu>
+			<menu link="option=com_jdeveloper&amp;view=plugins">Plugins</menu>
+			<menu link="option=com_jdeveloper&amp;view=packages">Packages</menu>
+			<menu link="option=com_jdeveloper&amp;view=forms">Forms</menu>
+			<menu link="option=com_jdeveloper&amp;view=formfields">Formfields</menu>
+			<menu link="option=com_jdeveloper&amp;view=formrules">Formrules</menu>
+			<menu link="option=com_jdeveloper&amp;view=extensions">Extensions</menu>
+			<menu link="option=com_jdeveloper&amp;view=import">Import</menu>
+		</submenu>
+		<files folder="admin">
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>config.php</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>defines.php</filename>
+			<filename>import.php</filename>
+			<filename>jdeveloper.php</filename>
+			<filename>LICENSE.txt</filename>
+			<folder>archive</folder>
+			<folder>assets</folder>
+			<folder>config</folder>
+			<folder>controllers</folder>
+			<folder>create</folder>
+			<folder>helpers</folder>
+			<folder>layouts</folder>
+			<folder>library</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>templates</folder>
+			<folder>tmp</folder>
+			<folder>views</folder>
+			<folder>xtd</folder>
+		</files>
+		<languages folder="admin">
+			<language tag="de-DE">language/de-DE.com_jdeveloper.ini</language>
+			<language tag="de-DE">language/de-DE.com_jdeveloper.sys.ini</language>
+			<language tag="en-GB">language/en-GB.com_jdeveloper.ini</language>
+			<language tag="en-GB">language/en-GB.com_jdeveloper.sys.ini</language>
+		</languages>
+
+	</administration>
+  
+	<updateservers>
+		<server type="extension" priority="1" name="JDeveloper Update Site">http://joommaster.bplaced.net/updates/jdeveloper-update.xml</server>
+	</updateservers>
+
+</extension>
