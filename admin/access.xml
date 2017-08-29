@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<access component="com_jdeveloper">
+	<section name="component">
+		<action name="core.admin" title="JACTION_ADMIN" description="JACTION_ADMIN_COMPONENT_DESC" />
+		<action name="core.manage" title="JACTION_MANAGE" description="JACTION_MANAGE_COMPONENT_DESC" />
+		<action name="core.create" title="JACTION_CREATE" description="JACTION_CREATE_COMPONENT_DESC" />
+		<action name="core.delete" title="JACTION_DELETE" description="JACTION_DELETE_COMPONENT_DESC" />
+		<action name="core.edit" title="JACTION_EDIT" description="JACTION_EDIT_COMPONENT_DESC" />
+		<action name="core.edit.own" title="JACTION_EDITOWN" description="JACTION_EDITOWN_COMPONENT_DESC" />
+		<action name="components.create" title="JACTION_CREATE_COMPONENT" description="JACTION_CREATE_COMPONENT" />
+		<action name="components.deletezip" title="JACTION_DELETE_ZIP_COMPONENT" description="JACTION_DELETE_ZIP_COMPONENT" />
+		<action name="components.install" title="JACTION_INSTALL_COMPONENT" description="JACTION_INSTALL_COMPONENT" />
+		<action name="components.uninstall" title="JACTION_UNINSTALL_COMPONENT" description="JACTION_UNINSTALL_COMPONENT" />
+		<action name="extensions.zip" title="JACTION_ZIP_EXTENSION" description="JACTION_ZIP_EXTENSION" />
+		<action name="extensions.deletezip" title="JACTION_DELETE_ZIP_EXTENSION" description="JACTION_DELETE_ZIP_EXTENSION" />
+		<action name="modules.create" title="JACTION_CREATE_MODULE" description="JACTION_CREATE_MODULE" />
+		<action name="modules.deletezip" title="JACTION_DELETE_ZIP_MODULE" description="JACTION_DELETE_ZIP_MODULE" />
+		<action name="modules.install" title="JACTION_INSTALL_MODULE" description="JACTION_INSTALL_MODULE" />
+		<action name="modules.uninstall" title="JACTION_UNINSTALL_MODULE" description="JACTION_UNINSTALL_MODULE" />
+		<action name="overrides.create" title="JACTION_CREATE_OVERRIDE" description="JACTION_CREATE_OVERRIDE" />
+		<action name="plugins.create" title="JACTION_CREATE_PLUGIN" description="JACTION_CREATE_PLUGIN" />
+		<action name="plugins.deletezip" title="JACTION_DELETE_ZIP_PLUGIN" description="JACTION_DELETE_ZIP_PLUGIN" />
+		<action name="plugins.install" title="JACTION_INSTALL_PLUGIN" description="JACTION_INSTALL_PLUGIN" />
+		<action name="plugins.uninstall" title="JACTION_UNINSTALL_PLUGIN" description="JACTION_UNINSTALL_PLUGIN" />
+		<action name="templates.create" title="JACTION_CREATE_TEMPLATE" description="JACTION_CREATE_TEMPLATE" />
+		<action name="templates.deletezip" title="JACTION_DELETE_ZIP_TEMPLATE" description="JACTION_DELETE_ZIP_TEMPLATE" />
+		<action name="templates.install" title="JACTION_INSTALL_TEMPLATE" description="JACTION_INSTALL_TEMPLATE" />
+		<action name="templates.uninstall" title="JACTION_UNINSTALL_TEMPLATE" description="JACTION_UNINSTALL_TEMPLATE" />
+	</section>
+</access>

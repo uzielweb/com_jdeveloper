@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+	<name>com_##component##</name>
+	<creationDate>##creationdate##</creationDate>
+	<author>##author##</author>
+	<authorEmail>##author_email##</authorEmail>
+	<authorUrl>##author_url##</authorUrl>
+	<copyright>##copyright##</copyright>
+	<license>##licence##</license>
+	<version>##version##</version>
+	<description>COM_##COMPONENT##_XML_DESCRIPTION</description>##{start_dbtables}##
+	
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates</schemapath>
+		</schemas>
+	</update>##{end_dbtables}####{start_frontend}##
+	
+	<files folder="site">
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>##component##.php</filename>
+		<filename>router.php</filename>
+		<folder>controllers</folder>
+		<folder>helpers</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+	</files>
+	
+	<languages folder="site">##languages_site##
+	</languages>##{end_frontend}##
+	
+	<administration>
+		<menu link="index.php?option=com_##component##">##Component##</menu>
+		<submenu>##submenus####{start_catid}##
+			<menu link="option=com_categories&amp;view=categories&amp;extension=com_##component##">JCATEGORIES</menu>##{end_catid}##
+		</submenu>
+		<files folder="admin">
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>##component##.php</filename>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>tables</folder>##{start_dbtables}##
+			<folder>sql</folder>##{end_dbtables}##
+			<folder>views</folder>
+		</files>
+		<languages folder="admin">##languages_admin##
+		</languages>
+	</administration>
+	
+	<updateservers>
+	</updateservers>
+</extension>

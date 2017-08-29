@@ -1,0 +1,2 @@
+
+			<th class="nowrap left"><?php echo JText::_('MOD_##MODULE##_FIELD_##FIELD##') ?></th>

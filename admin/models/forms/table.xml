@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field 
+			name="id"
+			type="text"
+			label="COM_JDEVELOPER_TABLE_FIELD_ID_LABEL"
+			description="COM_JDEVELOPER_TABLE_FIELD_ID_DESC"
+			size="20"
+			readonly="true"
+			default="0"
+			class="readonly"
+			required="1"
+		/>
+		<field 
+			name="name"
+			type="text"
+			label="COM_JDEVELOPER_TABLE_FIELD_NAME_LABEL"
+			description="COM_JDEVELOPER_TABLE_FIELD_NAME_DESC"
+			size="40"
+			filter="STRING"
+			required="1"
+		/>
+		<field 
+			name="type"
+			type="radio"
+			label="COM_JDEVELOPER_TABLE_FIELD_TABLE_NESTED_LABEL"
+			description="COM_JDEVELOPER_TABLE_FIELD_TEBLE_NESTED_DESC"
+			class="btn-group"
+			default="list"
+			required="1"
+		>
+			<option value="list">COM_JDEVELOPER_TABLE_FIELD_TABLE_NESTED_OPTION_LIST</option>
+			<option value="tree">COM_JDEVELOPER_TABLE_FIELD_TABLE_NESTED_OPTION_TREE</option>
+		</field>
+		<field 
+			name="component"
+			type="component"
+			label="COM_JDEVELOPER_TABLE_FIELD_COMPONENT_LABEL"
+			description="COM_JDEVELOPER_TABLE_FIELD_COMPONENT_DESC"
+			default=""
+			required="1"
+		>
+			<option value=""></option>
+		</field>
+		<field 
+			name="plural"
+			type="text"
+			label="COM_JDEVELOPER_TABLE_FIELD_PLURAL_LABEL"
+			description="COM_JDEVELOPER_TABLE_FIELD_PLURAL_DESC"
+			maxlength="30"
+			required="1"
+		/>
+		<field 
+			name="singular"
+			type="text"
+			label="COM_JDEVELOPER_TABLE_FIELD_SINGULAR_LABEL"
+			description="COM_JDEVELOPER_TABLE_FIELD_SINGULAR_DESC"
+			maxlength="30"
+			required="1"
+		/>
+		<field 
+			name="pk"
+			type="text"
+			label="COM_JDEVELOPER_TABLE_FIELD_PK_LABEL"
+			description="COM_JDEVELOPER_TABLE_FIELD_PK_DESC"
+			default="id"
+			maxlength="40"
+			required="1"
+		/>
+	</fieldset>
+	<fields name="params">
+		<fieldset name="view">
+			<field 
+				name="frontend"
+				type="radio"
+				label="COM_JDEVELOPER_TABLE_FIELD_FRONTEND_LABEL"
+				description="COM_JDEVELOPER_TABLE_FIELD_FRONTEND_DESC"
+				class="btn-group"
+				default="1"
+				required="1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field 
+				name="frontend_categories"
+				type="radio"
+				label="COM_JDEVELOPER_TABLE_FIELD_FRONTEND_CATEGORIES_LABEL"
+				description="COM_JDEVELOPER_TABLE_FIELD_FRONTEND_CATEGORIES_DESC"
+				class="btn-group"
+				default="0"
+				required="1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field 
+				name="frontend_feed"
+				type="radio"
+				label="COM_JDEVELOPER_TABLE_FIELD_FRONTEND_FEED_LABEL"
+				description="COM_JDEVELOPER_TABLE_FIELD_FRONTEND_FEED_DESC"
+				class="btn-group"
+				default="0"
+				required="1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field 
+				name="frontend_details"
+				type="radio"
+				label="COM_JDEVELOPER_TABLE_FIELD_FRONTEND_DETAILS_LABEL"
+				description="COM_JDEVELOPER_TABLE_FIELD_FRONTEND_DETAILS_DESC"
+				class="btn-group"
+				default="0"
+				required="1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field 
+				name="frontend_edit"
+				type="radio"
+				label="COM_JDEVELOPER_TABLE_FIELD_FRONTEND_EDIT_LABEL"
+				description="COM_JDEVELOPER_TABLE_FIELD_FRONTEND_EDIT_DESC"
+				class="btn-group"
+				default="0"
+				required="1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+		</fieldset>
+		<field 
+			name="relations"
+			type="jdevelopertables"
+			label="COM_JDEVELOPER_TABLE_FIELD_RELATIONS_LABEL"
+			description="COM_JDEVELOPER_TABLE_FIELD_RELATIONS_DESC"
+			multiple="true"
+			class="btn-group"
+		/>
+	</fields>
+	<fields name="jfields">
+		<fieldset name="jfields">
+			<field 
+				name="ordering"
+				type="radio"
+				label="COM_JDEVELOPER_TABLE_FIELD_ORDERING_LABEL"
+				description="COM_JDEVELOPER_TABLE_FIELD_ORDERING_DESC"
+				class="btn-group"
+				default="0"
+				required="1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field 
+				name="alias"
+				type="radio"
+				label="COM_JDEVELOPER_TABLE_FIELD_ALIAS_LABEL"
+				description="COM_JDEVELOPER_TABLE_FIELD_ALIAS_DESC"
+				class="btn-group"
+				default="0"
+				required="1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field 
+				name="catid"
+				type="radio"
+				label="COM_JDEVELOPER_TABLE_FIELD_CATEGORIES_LABEL"
+				description="COM_JDEVELOPER_TABLE_FIELD_CATEGORIES_DESC"
+				class="btn-group"
+				default="0"
+				required="1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field 
+				name="published"
+				type="radio"
+				label="COM_JDEVELOPER_TABLE_FIELD_STATE_LABEL"
+				description="COM_JDEVELOPER_TABLE_FIELD_STATE_DESC"
+				class="btn-group"
+				default="0"
+				required="1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field 
+				name="checked_out"
+				type="radio"
+				label="COM_JDEVELOPER_TABLE_FIELD_CHECKED_OUT_LABEL"
+				description="COM_JDEVELOPER_TABLE_FIELD_CHECKED_OUT_DESC"
+				class="btn-group"
+				default="0"
+				required="1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field 
+				name="created"
+				type="radio"
+				label="JGLOBAL_FIELD_CREATED_LABEL"
+				description="JGLOBAL_FIELD_CREATED_DESC"
+				class="btn-group"
+				default="0"
+				required="1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field 
+				name="created_by"
+				type="radio"
+				label="JGLOBAL_FIELD_CREATED_BY_LABEL"
+				description="JGLOBAL_FIELD_CREATED_BY_DESC"
+				class="btn-group"
+				default="0"
+				required="1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field 
+				name="created_by_alias"
+				type="radio"
+				label="JGLOBAL_FIELD_CREATED_BY_ALIAS_LABEL"
+				description="JGLOBAL_FIELD_CREATED_BY_ALIAS_DESC"
+				class="btn-group"
+				default="0"
+				required="1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field 
+				name="modified"
+				type="radio"
+				label="JGLOBAL_FIELD_MODIFIED_LABEL"
+				description="JGLOBAL_FIELD_MODIFIED_DESC"
+				class="btn-group"
+				default="0"
+				required="1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field 
+				name="modified_by"
+				type="radio"
+				label="JGLOBAL_FIELD_MODIFIED_BY_LABEL"
+				description="JGLOBAL_FIELD_MODIFIED_BY_DESC"
+				class="btn-group"
+				default="0"
+				required="1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field 
+				name="version"
+				type="radio"
+				label="COM_JDEVELOPER_TABLE_FIELD_VERSION_LABEL"
+				description="COM_JDEVELOPER_TABLE_FIELD_VERSION_DESC"
+				class="btn-group"
+				default="0"
+				required="1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field 
+				name="hits"
+				type="radio"
+				label="COM_JDEVELOPER_TABLE_FIELD_HITS_LABEL"
+				description="COM_JDEVELOPER_TABLE_FIELD_HITS_DESC"
+				class="btn-group"
+				default="0"
+				required="1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field 
+				name="publish_up"
+				type="radio"
+				label="JGLOBAL_FIELD_PUBLISH_UP_LABEL"
+				description="JGLOBAL_FIELD_PUBLISH_UP_DESC"
+				class="btn-group"
+				default="0"
+				required="1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field 
+				name="publish_down"
+				type="radio"
+				label="JGLOBAL_FIELD_PUBLISH_DOWN_LABEL"
+				description="JGLOBAL_FIELD_PUBLISH_DOWN_DESC"
+				class="btn-group"
+				default="0"
+				required="1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field 
+				name="params"
+				type="radio"
+				label="COM_JDEVELOPER_TABLE_FIELD_PARAMS_LABEL"
+				description="COM_JDEVELOPER_TABLE_FIELD_PARAMS_DESC"
+				class="btn-group"
+				default="0"
+				required="1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field 
+				name="access"
+				type="radio"
+				label="JFIELD_ACCESS_LABEL"
+				description="JFIELD_ACCESS_DESC"
+				class="btn-group"
+				default="0"
+				required="1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field 
+				name="language"
+				type="radio"
+				label="JFIELD_LANGUAGE_LABEL"
+				description="JFIELD_LANGUAGE_DESC"
+				class="btn-group"
+				default="0"
+				required="1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field 
+				name="images"
+				type="radio"
+				label="COM_JDEVELOPER_TABLE_FIELD_IMAGES_LABEL"
+				description="COM_JDEVELOPER_TABLE_FIELD_IMAGES_DESC"
+				class="btn-group"
+				default="0"
+				required="1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field 
+				name="tags"
+				type="radio"
+				label="JTAG"
+				description="JTAG_DESC"
+				class="btn-group hidden"
+				default="0"
+				required="1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field 
+				name="metadata"
+				type="radio"
+				label="JGLOBAL_FIELDSET_METADATA_OPTIONS"
+				description="Metadata"
+				class="btn-group"
+				default="0"
+				required="1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field 
+				name="metakey"
+				type="radio"
+				label="JFIELD_META_KEYWORDS_LABEL"
+				description="JFIELD_META_KEYWORDS_DESC"
+				class="btn-group"
+				default="0"
+				required="1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field 
+				name="metadesc"
+				type="radio"
+				label="JFIELD_META_DESCRIPTION_LABEL"
+				description="JFIELD_META_DESCRIPTION_DESC"
+				class="btn-group"
+				default="0"
+				required="1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field 
+				name="asset_id"
+				type="radio"
+				label="COM_JDEVELOPER_TABLE_FIELD_ACCESSCONTROL_LABEL"
+				description="COM_JDEVELOPER_TABLE_FIELD_ACCESSCONTROL_DESC"
+				class="btn-group"
+				default="0"
+				required="1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+		</fieldset>
+	</fields>
+</form>

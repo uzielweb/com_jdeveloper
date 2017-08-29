@@ -1,0 +1,2 @@
+
+				<td class="left"><?php echo $this->escape($item->##field##); ?></td>

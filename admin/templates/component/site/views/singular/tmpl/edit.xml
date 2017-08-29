@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_##COMPONENT##_##TABLE##_VIEW_FORM_TITLE" option="COM_##COMPONENT##_##TABLE##_VIEW_FORM_DESC">
+		<message>
+			<![CDATA[COM_##COMPONENT##_##TABLE##_VIEW_FORM_DESC]]>
+		</message>
+	</layout>
+	<fields name="params">
+		<fieldset name="basic">##{start_catid}##
+			<field
+				name="catid"
+				type="category"
+				label="JGLOBAL_CHOOSE_CATEGORY_LABEL"
+				extension="com_##component##"
+				description="JGLOBAL_CHOOSE_CATEGORY_DESC"
+			/>##{end_catid}##
+		</fieldset>
+	</fields>
+</metadata>

@@ -1,0 +1,7 @@
+		// Filter by ##field##
+		$##field## = $this->getState('filter.##field##');
+		if ($##field## != "")
+		{
+			$query->where('a.##field## = ' . $db->quote($db->escape($##field##)));
+		}
+

@@ -1,0 +1,25 @@
+	public static function get##Table####Field##s()
+	{
+		$options = array();
+
+		$db = JFactory::getDbo();
+		$query = $db->getQuery(true)
+			->select('DISTINCT a.##field## as value, a.##field## as text')
+			->from('#__##table_db## AS a')
+			->order('a.##field##');
+
+		// Get the options.
+		$db->setQuery($query);
+
+		try
+		{
+			$options = $db->loadObjectList();
+		}
+		catch (RuntimeException $e)
+		{
+			JError::raiseWarning(500, $e->getMessage());
+		}
+
+		return $options;
+	}
+

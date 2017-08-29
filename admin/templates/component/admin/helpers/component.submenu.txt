@@ -1,0 +1,5 @@
+		JHtmlSidebar::addEntry(
+			JText::_('COM_##COMPONENT##_SUBMENU_##TABLE##'), 
+			'index.php?option=com_##component##&view=##type_list##', 
+			$vName == '##type_list##'
+		);

@@ -1,0 +1,41 @@
+
+
+	/**
+	 * @param   integer  The route of the content item
+	 */
+	public static function get##Singular##Route($id, $catid = 0, $language = 0)
+	{
+		$needles = array(
+			'##singular##'  => array((int) $id)
+		);
+		//Create the link
+		$link = 'index.php?option=com_##component##&view=##singular##&##pk##='. $id;##{start_catid}##
+		if ((int) $catid > 1)
+		{
+			$categories = JCategories::getInstance('##Component##');
+			$category = $categories->get((int) $catid);
+			if ($category)
+			{
+				$needles['category'] = array_reverse($category->getPath());
+				$needles['categories'] = $needles['category'];
+				$link .= '&catid='.$catid;
+			}
+		}##{end_catid}####{start_language}##
+		if ($language && $language != "*" && JLanguageMultilang::isEnabled())
+		{
+			self::buildLanguageLookup();
+
+			if (isset(self::$lang_lookup[$language]))
+			{
+				$link .= '&lang=' . self::$lang_lookup[$language];
+				$needles['language'] = $language;
+			}
+		}##{end_language}##
+
+		if ($item = self::_findItem($needles))
+		{
+			$link .= '&Itemid='.$item;
+		}
+
+		return $link;
+	}

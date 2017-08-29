@@ -1,0 +1,18 @@
+<field 
+	name="##name##"
+	type="text"
+	label="COM_##COMPONENT##_##TABLE##_FIELD_##NAME##_LABEL"
+	description="COM_##COMPONENT##_##TABLE##_FIELD_##NAME##_DESC"
+	default="##default##"
+	maxlength="##maxlength##"
+	class="##class##"##{start_filter}##
+	filter="##filter##"##{end_filter}####{start_rule}##
+	validate="##rule##"##{end_rule}####{start_deactivated}##
+	deactivated="true"##{end_deactivated}####{start_readonly}##
+	readonly="true"##{end_readonly}####{start_required}##
+	required="true"##{end_required}####attributes####{!start_list}##
+/>##{!end_list}####{start_list}##
+>
+##options##
+</field>
+##{end_list}##

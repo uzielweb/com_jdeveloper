@@ -1,0 +1,5 @@
+
+			<tr>
+				<td>##Field##</td>
+				<td><?php echo $this->escape($this->item->##field##); ?></td>
+			</tr>

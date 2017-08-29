@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field 
+			name="site"
+			type="list"
+			label="COM_JDEVELOPER_COMPONENT_FIELD_SITE_LABEL"
+			description="COM_JDEVELOPER_COMPONENT_FIELD_SITE_DESC"
+			default=""
+			filter="INTEGER"
+			maxlength="1"
+			class="btn-group"
+			required="true"
+		>
+			<option value="">- Select frontend -</option>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+	</fieldset>
+</form>

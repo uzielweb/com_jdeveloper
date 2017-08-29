@@ -1,0 +1,17 @@
+
+<field
+	name="##name##"
+	type="##type##"
+	label="##label##"
+	description="##description##"
+	default="##default##"
+	maxlength="##maxlength##"
+	class="##class##"##{start_filter}##
+	filter="##filter##"##{end_filter}####{start_validation}##
+	validate="##validation##"##{end_validation}####{start_disabled}##
+	disabled="true"##{end_disabled}####{start_readonly}##
+	readonly="true"##{end_readonly}####{start_required}##
+	required="true"##{end_required}####attributes####{!start_list}##
+/>##{!end_list}####{start_list}##
+>##options##
+</field>##{end_list}##

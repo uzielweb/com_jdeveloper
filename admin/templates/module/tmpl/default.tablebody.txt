@@ -1,0 +1,2 @@
+
+			<td style="width:50%"><?php echo $item->##field##; ?></td>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field 
+			name="id"
+			type="text"
+			label="COM_JDEVELOPER_FORMRULE_FIELD_ID_LABEL"
+			description="COM_JDEVELOPER_FORMRULE_FIELD_ID_DESC"
+			size="20"
+			readonly="true"
+			default="0"
+			class="readonly"
+		/>
+		<field 
+			name="name"
+			type="text"
+			label="COM_JDEVELOPER_FORMRULE_FIELD_NAME_LABEL"
+			description="COM_JDEVELOPER_FORMRULE_FIELD_NAME_DESC"
+			size="50"
+			class="inputbox"
+			required="true"
+		/>
+		<field
+			name="source"
+			type="editor"
+			editor="codemirror|none"
+			buttons="no"
+			label="COM_JDEVELOPER_FORMRULE_FIELD_SOURCE_LABEL"
+			description="COM_JDEVELOPER_FORMRULE_FIELD_SOURCE_DESC"
+			height="500px"
+			rows="20"
+			cols="80"
+			syntax="php"
+			filter="raw"
+		/>
+	</fieldset>
+</form>

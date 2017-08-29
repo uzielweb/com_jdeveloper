@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field 
+			name="id"
+			type="text"
+			label="COM_JDEVELOPER_TEMPLATE_FIELD_ID_LABEL"
+			description="COM_JDEVELOPER_TEMPLATE_FIELD_ID_DESC"
+			size="20"
+			readonly="true"
+			default="0"
+			class="readonly"
+		/>
+		<field 
+			name="name"
+			type="text"
+			label="COM_JDEVELOPER_TEMPLATE_FIELD_NAME_LABEL"
+			description="COM_JDEVELOPER_TEMPLATE_FIELD_NAME_DESC"
+			required="1"
+		/>
+		<field 
+			name="display_name"
+			type="text"
+			label="COM_JDEVELOPER_TEMPLATE_FIELD_DISPLAYNAME_LABEL"
+			description="COM_JDEVELOPER_TEMPLATE_FIELD_DISPLAYNAME_DESC"
+			required="1"
+		/>
+		<field 
+			name="version"
+			type="text"
+			label="COM_JDEVELOPER_TEMPLATE_FIELD_VERSION_LABEL"
+			description="COM_JDEVELOPER_TEMPLATE_FIELD_VERSION_DESC"
+			size="10"
+			default="1.0.0"
+			required="1"
+		/>
+		<field 
+			name="description"
+			type="textarea"
+			label="COM_JDEVELOPER_TEMPLATE_FIELD_DESCRIPTION_LABEL"
+			description="COM_JDEVELOPER_TEMPLATE_FIELD_DESCRIPTION_DESC"
+			required="1"
+		/>
+	</fieldset>
+	<fields name="params">
+		<fieldset name="params">
+			<field 
+				name="languages"
+				type="list"
+				label="COM_JDEVELOPER_COMPONENT_FIELD_LANGUAGES_LABEL"
+				description="COM_JDEVELOPER_COMPONENT_FIELD_LANGUAGES_DESC"
+				class="inputbox"
+				default="en-GB"
+				multiple="true"
+			>
+			  <option value="af-ZA">COM_JDEVELOPER_LANGUAGE_AFRIKAANS</option>
+			  <option value="ar-AA">COM_JDEVELOPER_LANGUAGE_ARABIC_UNITAG</option>
+			  <option value="az-AZ">COM_JDEVELOPER_LANGUAGE_AZERI</option>
+			  <option value="be-BY">COM_JDEVELOPER_LANGUAGE_BELARUSIAN</option>
+			  <option value="bg-BG">COM_JDEVELOPER_LANGUAGE_BULGARIAN</option>
+			  <option value="bs-BA">COM_JDEVELOPER_LANGUAGE_BOSNIAN</option>
+			  <option value="ca-ES">COM_JDEVELOPER_LANGUAGE_CATALAN</option>
+			  <option value="ckb-IQ">COM_JDEVELOPER_LANGUAGE_KURDISH_SORANI</option>
+			  <option value="cy-GB">COM_JDEVELOPER_LANGUAGE_WELSH</option>
+			  <option value="da-DK">COM_JDEVELOPER_LANGUAGE_DANISH</option>
+			  <option value="de-DE">COM_JDEVELOPER_LANGUAGE_GERMAN</option>
+			  <option value="el-GR">COM_JDEVELOPER_LANGUAGE_GREEK</option>
+			  <option value="en-AU">COM_JDEVELOPER_LANGUAGE_ENGLISH_AU</option>
+			  <option value="en-GB">COM_JDEVELOPER_LANGUAGE_ENGLISH_GB</option>
+			  <option value="en-US">COM_JDEVELOPER_LANGUAGE_ENGLISH_US</option>
+			  <option value="eo-XX">COM_JDEVELOPER_LANGUAGE_ESPERANTO</option>
+			  <option value="es-ES">COM_JDEVELOPER_LANGUAGE_SPANISH</option>
+			  <option value="et-EE">COM_JDEVELOPER_LANGUAGE_ESTONIAN</option>
+			  <option value="eu-ES">COM_JDEVELOPER_LANGUAGE_BASQUE</option>
+			  <option value="fa-IR">COM_JDEVELOPER_LANGUAGE_PERSIAN</option>
+			  <option value="fi-FI">COM_JDEVELOPER_LANGUAGE_FINNISH</option>
+			  <option value="fr-FR">COM_JDEVELOPER_LANGUAGE_FRENCH</option>
+			  <option value="gd-GB">COM_JDEVELOPER_LANGUAGE_SCOTTISH_GAELIC</option>
+			  <option value="gl-ES">COM_JDEVELOPER_LANGUAGE_GALICIAN</option>
+			  <option value="he-IL">COM_JDEVELOPER_LANGUAGE_HEBREW</option>
+			  <option value="hi-IN">COM_JDEVELOPER_LANGUAGE_HINDI</option>
+			  <option value="hr-HR">COM_JDEVELOPER_LANGUAGE_CROATIAN</option>
+			  <option value="hu-HU">COM_JDEVELOPER_LANGUAGE_HUNGARIAN</option>
+			  <option value="hy-AM">COM_JDEVELOPER_LANGUAGE_ARMENIAN</option>
+			  <option value="id-ID">COM_JDEVELOPER_LANGUAGE_BAHASA_INDONESIA</option>
+			  <option value="it-IT">COM_JDEVELOPER_LANGUAGE_ITALIAN</option>
+			  <option value="ja-JP">COM_JDEVELOPER_LANGUAGE_JAPANESE</option>
+			  <option value="km-KH">COM_JDEVELOPER_LANGUAGE_KHMER</option>
+			  <option value="ko-KR">COM_JDEVELOPER_LANGUAGE_KOREAN</option>
+			  <option value="lo-LA">COM_JDEVELOPER_LANGUAGE_LAOTIAN</option>
+			  <option value="lt-LT">COM_JDEVELOPER_LANGUAGE_LITHUANIAN</option>
+			  <option value="lv-LV">COM_JDEVELOPER_LANGUAGE_LATVIAN</option>
+			  <option value="mk-MK">COM_JDEVELOPER_LANGUAGE_MACEDONIAN</option>
+			  <option value="nb-NO">COM_JDEVELOPER_LANGUAGE_NORWEGIAN_BOKMAL</option>
+			  <option value="nl-BE">COM_JDEVELOPER_LANGUAGE_FLEMISH</option>
+			  <option value="nl-NL">COM_JDEVELOPER_LANGUAGE_DUTCH</option>
+			  <option value="nn-NO">COM_JDEVELOPER_LANGUAGE_NORWEGIAN_NYNORSK</option>
+			  <option value="pl-PL">COM_JDEVELOPER_LANGUAGE_POLISH</option>
+			  <option value="pt-BR">COM_JDEVELOPER_LANGUAGE_PORTUGUESE_BRAZIL</option>
+			  <option value="pt-PT">COM_JDEVELOPER_LANGUAGE_PORTUGUESE</option>
+			  <option value="ro-RO">COM_JDEVELOPER_LANGUAGE_ROMANIAN</option>
+			  <option value="ru-RU">COM_JDEVELOPER_LANGUAGE_RUSSIAN</option>
+			  <option value="sk-SK">COM_JDEVELOPER_LANGUAGE_SLOVAK</option>
+			  <option value="sq-AL">COM_JDEVELOPER_LANGUAGE_ALBANIAN</option>
+			  <option value="sr-RS">COM_JDEVELOPER_LANGUAGE_SERBIAN_CYRILLIC</option>
+			  <option value="sr-YU">COM_JDEVELOPER_LANGUAGE_SERBIAN_LATIN</option>
+			  <option value="sv-SE">COM_JDEVELOPER_LANGUAGE_SWEDISH</option>
+			  <option value="sw-KE">COM_JDEVELOPER_LANGUAGE_SWAHILI</option>
+			  <option value="sy-IQ">COM_JDEVELOPER_LANGUAGE_SYRIAC</option>
+			  <option value="ta-IN">COM_JDEVELOPER_LANGUAGE_TAMIL_INDIA</option>
+			  <option value="th-TH">COM_JDEVELOPER_LANGUAGE_THAI</option>
+			  <option value="tr-TR">COM_JDEVELOPER_LANGUAGE_TURKISH</option>
+			  <option value="ug-CN">COM_JDEVELOPER_LANGUAGE_UYGHUR</option>
+			  <option value="uk-UA">COM_JDEVELOPER_LANGUAGE_UKRAINIAN</option>
+			  <option value="vi-VN">COM_JDEVELOPER_LANGUAGE_VIETNAMESE</option>
+			  <option value="zh-CN">COM_JDEVELOPER_LANGUAGE_CHINESE_SIMPLIFIED</option>
+			  <option value="zh-TW">COM_JDEVELOPER_LANGUAGE_CHINESE_TRADITIONAL</option>
+			</field>
+			<field 
+				name="copyright"
+				type="text"
+				label="COM_JDEVELOPER_COMPONENT_FIELD_COPYRIGHT_LABEL"
+				description="COM_JDEVELOPER_COMPONENT_FIELD_COPYRIGHT_DESC"
+				size="255"
+			/>
+			<field 
+				name="license"
+				type="text"
+				label="COM_JDEVELOPER_COMPONENT_FIELD_LICENCE_LABEL"
+				description="COM_JDEVELOPER_COMPONENT_FIELD_LICENCE_DESC"
+				size="255"
+			/>
+			<field 
+				name="author"
+				type="text"
+				label="COM_JDEVELOPER_COMPONENT_FIELD_AUTHOR_LABEL"
+				description="COM_JDEVELOPER_COMPONENT_FIELD_AUTHOR_DESC"
+				size="100"
+			/>
+			<field 
+				name="author_email"
+				type="text"
+				label="COM_JDEVELOPER_COMPONENT_FIELD_AUTHOREMAIL_LABEL"
+				description="COM_JDEVELOPER_COMPONENT_FIELD_AUTHOREMAIL_DESC"
+				size="50"
+			/>
+			<field 
+				name="author_url"
+				type="text"
+				label="COM_JDEVELOPER_COMPONENT_FIELD_AUTHORURL_LABEL"
+				description="COM_JDEVELOPER_COMPONENT_FIELD_AUTHORURL_DESC"
+				size="100"
+			/>
+		</fieldset>
+	</fields>
+</form>

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="std">
+		<field 
+			name="component"
+			type="sql"
+			label="COM_JDEVELOPER_TABLE_FIELD_COMPONENT_LABEL"
+			description="COM_JDEVELOPER_TABLE_FIELD_COMPONENT_DESC"
+			default=""
+			query="SELECT id, name FROM #__jdeveloper_components"
+			key_field="id"
+			value_field="name"
+		>
+			<option value="">COM_JDEVELOPER_KEEP</option>
+		</field>
+		<field 
+			name="pk"
+			type="text"
+			label="COM_JDEVELOPER_TABLE_FIELD_PK_LABEL"
+			description="COM_JDEVELOPER_TABLE_FIELD_PK_DESC"
+			default=""
+			maxlength="40"
+		/>
+		<field 
+			name="frontend"
+			type="radio"
+			label="COM_JDEVELOPER_TABLE_FIELD_FRONTEND_LABEL"
+			description="COM_JDEVELOPER_TABLE_FIELD_FRONTEND_DESC"
+			class="btn-group"
+			default=""
+		>
+			<option value="">COM_JDEVELOPER_KEEP</option>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field 
+			name="feed"
+			type="radio"
+			label="COM_JDEVELOPER_TABLE_FIELD_FEED_LABEL"
+			description="COM_JDEVELOPER_TABLE_FIELD_FEED_DESC"
+			class="btn-group"
+			default=""
+		>
+			<option value="">COM_JDEVELOPER_KEEP</option>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field 
+			name="frontend_details"
+			type="radio"
+			label="COM_JDEVELOPER_TABLE_FIELD_FRONTEND_DETAILS_LABEL"
+			description="COM_JDEVELOPER_TABLE_FIELD_FRONTEND_DETAILS_DESC"
+			class="btn-group"
+			default=""
+		>
+			<option value="">COM_JDEVELOPER_KEEP</option>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field 
+			name="frontend_edit"
+			type="radio"
+			label="COM_JDEVELOPER_TABLE_FIELD_FRONTEND_EDIT_LABEL"
+			description="COM_JDEVELOPER_TABLE_FIELD_FRONTEND_EDIT_DESC"
+			class="btn-group"
+			default=""
+		>
+			<option value="">COM_JDEVELOPER_KEEP</option>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field 
+			name="frontend_menu_list"
+			type="radio"
+			label="COM_JDEVELOPER_TABLE_FIELD_FRONTEND_MENU_LIST_LABEL"
+			description="COM_JDEVELOPER_TABLE_FIELD_FRONTEND_MENU_LIST_DESC"
+			class="btn-group"
+			default=""
+		>
+			<option value="">COM_JDEVELOPER_KEEP</option>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+	</fieldset>
+	<fieldset name="dbpattern">
+		<field 
+			name="ordering"
+			type="radio"
+			label="COM_JDEVELOPER_TABLE_FIELD_ORDERING_LABEL"
+			description="COM_JDEVELOPER_TABLE_FIELD_ORDERING_DESC"
+			class="btn-group"
+			default=""
+		>
+			<option value="">COM_JDEVELOPER_KEEP</option>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field 
+			name="alias"
+			type="radio"
+			label="COM_JDEVELOPER_TABLE_FIELD_ALIAS_LABEL"
+			description="COM_JDEVELOPER_TABLE_FIELD_ALIAS_DESC"
+			class="btn-group"
+			default=""
+		>
+			<option value="">COM_JDEVELOPER_KEEP</option>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field 
+			name="catid"
+			type="radio"
+			label="COM_JDEVELOPER_TABLE_FIELD_CATEGORIES_LABEL"
+			description="COM_JDEVELOPER_TABLE_FIELD_CATEGORIES_DESC"
+			class="btn-group"
+			default=""
+		>
+			<option value="">COM_JDEVELOPER_KEEP</option>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field 
+			name="published"
+			type="radio"
+			label="COM_JDEVELOPER_TABLE_FIELD_STATE_LABEL"
+			description="COM_JDEVELOPER_TABLE_FIELD_STATE_DESC"
+			class="btn-group"
+			default=""
+		>
+			<option value="">COM_JDEVELOPER_KEEP</option>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field 
+			name="checked_out"
+			type="radio"
+			label="COM_JDEVELOPER_TABLE_FIELD_CHECKED_OUT_LABEL"
+			description="COM_JDEVELOPER_TABLE_FIELD_CHECKED_OUT_DESC"
+			class="btn-group"
+			default=""
+		>
+			<option value="">COM_JDEVELOPER_KEEP</option>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field 
+			name="created"
+			type="radio"
+			label="JGLOBAL_FIELD_CREATED_LABEL"
+			description="JGLOBAL_FIELD_CREATED_DESC"
+			class="btn-group"
+			default=""
+		>
+			<option value="">COM_JDEVELOPER_KEEP</option>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field 
+			name="created_by"
+			type="radio"
+			label="JGLOBAL_FIELD_CREATED_BY_LABEL"
+			description="JGLOBAL_FIELD_CREATED_BY_DESC"
+			class="btn-group"
+			default=""
+		>
+			<option value="">COM_JDEVELOPER_KEEP</option>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field 
+			name="modified"
+			type="radio"
+			label="JGLOBAL_FIELD_MODIFIED_LABEL"
+			description="JGLOBAL_FIELD_MODIFIED_DESC"
+			class="btn-group"
+			default=""
+		>
+			<option value="">COM_JDEVELOPER_KEEP</option>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field 
+			name="modified_by"
+			type="radio"
+			label="JGLOBAL_FIELD_MODIFIED_BY_LABEL"
+			description="JGLOBAL_FIELD_MODIFIED_BY_DESC"
+			class="btn-group"
+			default=""
+		>
+			<option value="">COM_JDEVELOPER_KEEP</option>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field 
+			name="version"
+			type="radio"
+			label="COM_JDEVELOPER_TABLE_FIELD_VERSION_LABEL"
+			description="COM_JDEVELOPER_TABLE_FIELD_VERSION_DESC"
+			class="btn-group"
+			default=""
+		>
+			<option value="">COM_JDEVELOPER_KEEP</option>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field 
+			name="hits"
+			type="radio"
+			label="COM_JDEVELOPER_TABLE_FIELD_HITS_LABEL"
+			description="COM_JDEVELOPER_TABLE_FIELD_HITS_DESC"
+			class="btn-group"
+			default=""
+		>
+			<option value="">COM_JDEVELOPER_KEEP</option>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field 
+			name="publish_up"
+			type="radio"
+			label="JGLOBAL_FIELD_PUBLISH_UP_LABEL"
+			description="JGLOBAL_FIELD_PUBLISH_UP_DESC"
+			class="btn-group"
+			default=""
+		>
+			<option value="">COM_JDEVELOPER_KEEP</option>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field 
+			name="publish_down"
+			type="radio"
+			label="JGLOBAL_FIELD_PUBLISH_DOWN_LABEL"
+			description="JGLOBAL_FIELD_PUBLISH_DOWN_DESC"
+			class="btn-group"
+			default=""
+		>
+			<option value="">COM_JDEVELOPER_KEEP</option>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field 
+			name="access"
+			type="radio"
+			label="JFIELD_ACCESS_LABEL"
+			description="JFIELD_ACCESS_DESC"
+			class="btn-group"
+			default=""
+		>
+			<option value="">COM_JDEVELOPER_KEEP</option>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field 
+			name="language"
+			type="radio"
+			label="JFIELD_LANGUAGE_LABEL"
+			description="JFIELD_LANGUAGE_DESC"
+			class="btn-group"
+			default=""
+		>
+			<option value="">COM_JDEVELOPER_KEEP</option>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field 
+			name="metadata"
+			type="radio"
+			label="JGLOBAL_FIELDSET_METADATA_OPTIONS"
+			description="Metadata"
+			class="btn-group"
+			default=""
+		>
+			<option value="">COM_JDEVELOPER_KEEP</option>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field 
+			name="metakey"
+			type="radio"
+			label="JFIELD_META_KEYWORDS_LABEL"
+			description="JFIELD_META_KEYWORDS_DESC"
+			class="btn-group"
+			default=""
+		>
+			<option value="">COM_JDEVELOPER_KEEP</option>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field 
+			name="metadesc"
+			type="radio"
+			label="JFIELD_META_DESCRIPTION_LABEL"
+			description="JFIELD_META_DESCRIPTION_DESC"
+			class="btn-group"
+			default=""
+		>
+			<option value="">COM_JDEVELOPER_KEEP</option>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field 
+			name="asset_id"
+			type="radio"
+			label="COM_JDEVELOPER_TABLE_FIELD_ACCESSCONTROL_LABEL"
+			description="COM_JDEVELOPER_TABLE_FIELD_ACCESSCONTROL_DESC"
+			class="btn-group"
+			default=""
+		>
+			<option value="">COM_JDEVELOPER_KEEP</option>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+	</fieldset>
+</form>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset addfieldpath="/administrator/components/com_categories/models/fields" name="content">
+		<field 
+			name="id"
+			type="text"
+			label="COM_JDEVELOPER_FORMS_FIELD_ID_LABEL"
+			description="COM_JDEVELOPER_FORMS_FIELD_ID_DESC"
+			maxlength="10"
+			filter="INTEGER"
+			class="readonly"
+			readonly="true"
+		/>
+		<field 
+			name="relation"
+			type="hidden"
+			label="COM_JDEVELOPER_FORMS_FIELD_RELATION_LABEL"
+			description="COM_JDEVELOPER_FORMS_FIELD_RELATION_DESC"
+		/>
+		<field
+			name="name"
+			label="COM_JDEVELOPER_FORMS_FIELD_NAME_LABEL"
+			description="COM_JDEVELOPER_FORMS_FIELD_NAME_DESC"
+			type="text"
+			maxlength="50"
+			class="input-xxlarge input-large-text"
+		/>
+		<field
+			name="tag"
+			label="COM_JDEVELOPER_FORMS_FIELD_TAG_LABEL"
+			description="COM_JDEVELOPER_FORMS_FIELD_TAG_DESC"
+			type="text"
+			maxlength="255"
+			readonly="true"
+			required="true"
+		/>
+		<field 
+			name="type"
+			type="jformfields"
+			label="COM_JDEVELOPER_FIELD_FIELD_TYPE_LABEL"
+			description="COM_JDEVELOPER_FIELD_FIELD_TYPE_DESC"
+			class="inputbox"
+			default="text"
+		/>
+		<field
+			name="label"
+			label="COM_JDEVELOPER_FORMS_FIELD_LABEL_LABEL"
+			description="COM_JDEVELOPER_FORMS_FIELD_LABEL_DESC"
+			type="text"
+			maxlength="50"
+		/>
+		<field
+			name="description"
+			label="COM_JDEVELOPER_FORMS_FIELD_DESCRIPTION_LABEL"
+			description="COM_JDEVELOPER_FORMS_FIELD_DESCRIPTION_DESC"
+			type="text"
+			maxlength="1000"
+		/>
+		<field
+			name="default"
+			label="COM_JDEVELOPER_FORMS_FIELD_DEFAULT_LABEL"
+			description="COM_JDEVELOPER_FORMS_FIELD_DEFAULT_DESC"
+			type="text"
+			maxlength="100"
+		/>
+		<field
+			name="maxlength"
+			label="COM_JDEVELOPER_FORMS_FIELD_MAXLENGTH_LABEL"
+			description="COM_JDEVELOPER_FORMS_FIELD_MAXLENGTH_DESC"
+			type="text"
+			maxlength="10"
+		/>
+		<field 
+			name="validation"
+			type="jformrules"
+			label="COM_JDEVELOPER_FIELD_FIELD_RULE_LABEL"
+			description="COM_JDEVELOPER_FIELD_FIELD_RULE_DESC"
+			class="inputbox"
+		>
+			<option value=""></option>
+		</field>
+		<field 
+			name="filter"
+			type="list"
+			label="COM_JDEVELOPER_FIELD_FIELD_FILTER_LABEL"
+			description="COM_JDEVELOPER_FIELD_FIELD_FILTER_DESC"
+			class="inputbox"
+		>
+			<option value=""></option>
+			<option value="ALNUM">ALNUM</option>
+			<option value="ARRAY">ARRAY</option>
+			<option value="BASE64">BASE64</option>
+			<option value="BOOLEAN">BOOLEAN</option>
+			<option value="CMD">CMD</option>
+			<option value="FLOAT">FLOAT</option>
+			<option value="HTML">HTML</option>
+			<option value="INTEGER">INTEGER</option>
+			<option value="PATH">PATH</option>
+			<option value="RAW">RAW</option>
+			<option value="STRING">STRING</option>
+			<option value="UNIT">UNIT</option>
+			<option value="USERNAME">USERNAME</option>
+			<option value="WORD">WORD</option>
+		</field>
+		<field 
+			name="options"
+			type="formfieldoptions"
+			multiple="true"
+			label="COM_JDEVELOPER_FIELD_FIELD_OPTIONS_LABEL"
+			description="COM_JDEVELOPER_FIELD_FIELD_OPTIONS_DESC"
+			model="Form"
+			class="inputbox"
+		/>
+		<field 
+			name="class"
+			type="text"
+			label="COM_JDEVELOPER_FIELD_FIELD_CLASS_LABEL"
+			description="COM_JDEVELOPER_FIELD_FIELD_CLASS_DESC"
+			size="30"
+			class="inputbox"
+			default="inputbox"
+		/>
+		<field 
+			name="readonly"
+			type="radio"
+			label="COM_JDEVELOPER_FIELD_FIELD_READONLY_LABEL"
+			description="COM_JDEVELOPER_FIELD_FIELD_READONLY_DESC"
+			class="btn-group"
+			default="0"
+		>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field
+			name="disabled"
+			type="radio"
+			label="COM_JDEVELOPER_FIELD_FIELD_DISABLED_LABEL"
+			description="COM_JDEVELOPER_FIELD_FIELD_DISABLED_DESC"
+			class="btn-group"
+			default="0"
+		>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field 
+			name="required"
+			type="radio"
+			label="COM_JDEVELOPER_FIELD_FIELD_REQUIRED_LABEL"
+			description="COM_JDEVELOPER_FIELD_FIELD_REQUIRED_DESC"
+			class="btn-group"
+			default="0"
+		>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field
+			name="alias"
+			type="text"
+			label="JFIELD_ALIAS_LABEL"
+			description="JFIELD_ALIAS_DESC"
+			hint="JFIELD_ALIAS_PLACEHOLDER"
+			class="inputbox" size="40"
+		/>
+		<field
+			name="parent_id"
+			type="formparent"
+			label="COM_JDEVELOPER_FORMS_FIELD_PARENT_ID_LABEL"
+			description="COM_JDEVELOPER_FORMS_FIELD_PARENT_ID_DESC"
+		/>
+		<field
+			name="lft"
+			type="hidden"
+			filter="unset"
+		/>
+		<field
+			name="rgt"
+			type="hidden"
+			filter="unset"
+		/>
+		<field
+			name="path"
+			type="hidden"
+			filter="unset"
+		/>
+		<field
+			name="level"
+			type="hidden"
+			filter="unset"
+		/>
+		<field
+			name="created_by"
+			type="user"
+			label="JGLOBAL_FIELD_CREATED_BY_LABEL"
+			description="JGLOBAL_FIELD_CREATED_BY_DESC"
+		/>
+	</fieldset>
+	<fields name="params">
+		<fieldset name="params">
+		</fieldset>
+	</fields>
+</form>

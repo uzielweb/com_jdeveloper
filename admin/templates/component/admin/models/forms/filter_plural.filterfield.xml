@@ -1,0 +1,15 @@
+
+		<field 
+			name="##field##"
+			type="sql"
+			label="COM_##COMPONENT##_##PLURAL##_FIELD_##FIELD##_LABEL"
+			description="COM_##COMPONENT##_##PLURAL##_FIELD_##FIELD##_DESC"
+			default=""
+			query="SELECT DISTINCT ##field## FROM #__##table_db##"
+			key_field="##field##"
+			value_field="##field##"
+			onchange="this.form.submit();"
+			required="1"
+			>
+			<option value="">COM_##COMPONENT##_##TABLE##_FIELD_##FIELD##_FILTER</option>
+		</field>					

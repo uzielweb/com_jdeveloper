@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset addfieldpath="/administrator/components/com_categories/models/fields">##{start_asset_id}##
+		<field
+			name="asset_id"
+			type="hidden"
+			filter="unset"
+		/>##{end_asset_id}##
+		<field 
+			name="##pk##"
+			type="text"
+			label="COM_##COMPONENT##_##TABLE##_FIELD_##PK##_LABEL"
+			description="COM_##COMPONENT##_##TABLE##_FIELD_##PK##_DESC"
+			maxlength="10"
+			filter="INTEGER"
+			class="readonly"
+			readonly="true"
+		/>##relations####fields####{start_alias}##
+		<field
+			name="alias"
+			type="text"
+			label="JFIELD_ALIAS_LABEL"
+			description="JFIELD_ALIAS_DESC"
+			hint="JFIELD_ALIAS_PLACEHOLDER"
+			class="inputbox" size="40"
+		/>##{end_alias}####{start_table_nested}##
+		<field
+			name="parent_id"
+			type="##singular##parent"
+			label="COM_##COMPONENT##_##TABLE##_FIELD_PARENT_ID_LABEL"
+			description="COM_##COMPONENT##_##TABLE##_FIELD_PARENT_ID_DESC"
+		/>
+		<field
+			name="lft"
+			type="hidden"
+			filter="unset"
+		/>
+		<field
+			name="rgt"
+			type="hidden"
+			filter="unset"
+		/>
+		<field
+			name="path"
+			type="hidden"
+			filter="unset"
+		/>
+		<field
+			name="level"
+			type="hidden"
+			filter="unset"
+		/>##{end_table_nested}####{start_catid}##
+		<field
+			name="catid"
+			type="categoryedit"
+			extension="com_##component##"
+			label="JCATEGORY"
+			description="JFIELD_CATEGORY_DESC"
+			class="inputbox"
+			required="true"
+		/>##{end_catid}####{start_published}##
+		<field
+			name="published"
+			type="list"
+			label="JSTATUS"
+			description="JFIELD_PUBLISHED_DESC"
+			class="chzn-color-state"
+			size="1"
+			default="1"
+			filter="interval"
+		>
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+			<option value="2">JARCHIVED</option>
+			<option value="-2">JTRASHED</option>
+		</field>##{end_published}####{start_checked_out}##
+		<field
+			name="checked_out"
+			type="hidden"
+			label="COM_##COMPONENT##_##TABLE##_FIELD_CHECKED_OUT_LABEL"
+			description="COM_##COMPONENT##_##TABLE##_FIELD_CHECKED_OUT_DESC"
+			filter="UNSET"
+		/>##{end_checked_out}####{start_created}##
+		<field
+			name="created"
+			type="calendar"
+			label="JGLOBAL_FIELD_CREATED_LABEL"
+			description="JGLOBAL_FIELD_CREATED_DESC"
+			class="readonly"
+		/>##{end_created}####{start_created_by}##
+		<field
+			name="created_by"
+			type="user"
+			label="JGLOBAL_FIELD_CREATED_BY_LABEL"
+			description="JGLOBAL_FIELD_CREATED_BY_DESC"
+		/>##{end_created_by}####{start_created_by_alias}##
+		<field
+			name="created_by_alias"
+			type="text"
+			label="JFIELD_ALIAS_LABEL"
+			description="JFIELD_ALIAS_DESC"
+			class="inputbox" size="20"
+		/>##{end_created_by_alias}####{start_modified}##
+		<field
+			name="modified"
+			type="calendar"
+			label="JGLOBAL_FIELD_MODIFIED_LABEL"
+			description="JGLOBAL_FIELD_MODIFIED_LABEL"
+			class="readonly"
+		/>##{end_modified}####{start_modified_by}##
+		<field
+			name="modified_by"
+			type="user"
+			label="JGLOBAL_FIELD_MODIFIED_BY_LABEL"
+			description="JGLOBAL_FIELD_MODIFIED_BY_DESC"
+		/>##{end_modified_by}####{start_publish_up}##
+		<field
+			name="publish_up"
+			type="calendar"
+			label="JGLOBAL_FIELD_PUBLISH_UP_LABEL"
+			description="JGLOBAL_FIELD_PUBLISH_UP_DESC"
+			class="inputbox" format="%Y-%m-%d %H:%M:%S"
+			labelclass="control-label"
+			filter="user_utc"
+		/>##{end_publish_up}####{start_publish_down}##
+		<field
+			name="publish_down"
+			type="calendar"
+			label="JGLOBAL_FIELD_PUBLISH_DOWN_LABEL"
+			description="JGLOBAL_FIELD_PUBLISH_DOWN_DESC"
+			class="inputbox"
+			format="%Y-%m-%d %H:%M:%S"
+			labelclass="control-label"
+			filter="user_utc"
+		/>##{end_publish_down}####{start_language}##
+		<field
+			name="language"
+			type="contentlanguage"
+			label="JFIELD_LANGUAGE_LABEL"
+			description="JFIELD_LANGUAGE_DESC"
+			class="inputbox"
+		>
+			<option value="*">JALL</option>
+		</field>##{end_language}####{start_version}##
+		<field
+			name="version"
+			type="text"
+			label="JGLOBAL_MODIFIED"
+			description="JGLOBAL_MODIFIED"
+			readonly="true"
+			filter="unset"
+			class="readonly"
+		/>##{end_version}####{start_hits}##
+		<field
+			name="hits"
+			type="text"
+			label="JGLOBAL_HITS"
+			description="JGLOBAL_LIST_HITS_LABEL"
+			readonly="true"
+			filter="unset"
+			class="readonly"
+		/>##{end_hits}####{start_tags}##
+		<field
+			name="tags"
+			type="tag"
+			label="JTAG"
+			description="JTAG_DESC"
+			class="span12"
+			multiple="true"
+		>
+		</field>##{end_tags}####{start_metakey}##
+		<field
+			name="metakey"
+			type="textarea"
+			label="JFIELD_META_KEYWORDS_LABEL"
+			description="JFIELD_META_KEYWORDS_DESC"
+			class="inputbox"
+			rows="3"
+			cols="30"
+		/>##{end_metakey}####{start_metadesc}##
+		<field
+			name="metadesc"
+			type="textarea"
+			label="JFIELD_META_DESCRIPTION_LABEL"
+			description="JFIELD_META_DESCRIPTION_DESC"
+			class="inputbox"
+			rows="3"
+			cols="30"
+		/>##{end_metadesc}####{start_access}##
+		<field
+			name="access"
+			type="accesslevel"
+			label="JFIELD_ACCESS_LABEL"
+			description="JFIELD_ACCESS_DESC"
+			default="1"
+			class="inputbox"
+			size="1"
+		/>##{end_access}####{start_asset_id}##
+		<field
+			name="rules"
+			type="rules"
+			label="JFIELD_RULES_LABEL"
+			translate_label="false"
+			class="inputbox"
+			filter="rules"
+			component="com_##component##"
+			section="##singular##"
+			validate="rules"
+		/>##{end_asset_id}####form_fields##
+	</fieldset>##{start_params}##
+	<fields name="params">
+		<fieldset name="params">
+		</fieldset>
+	</fields>##{end_params}####{start_images}##
+	<fields name="images" label="JGLOBAL_FIELDSET_IMAGE_OPTIONS">
+		<fieldset name="images" label="JGLOBAL_FIELDSET_IMAGE_OPTIONS">
+			<field
+				name="image_first"
+				type="media"
+				label="COM_##COMPONENT##_FIELD_IMAGE_FIRST_LABEL"
+				description="COM_##COMPONENT##_FIELD_IMAGE_FIRST_DESC"
+			/>
+		</fieldset>
+	</fields>##{end_images}####{start_metadata}##
+	<fields name="metadata" label="JGLOBAL_FIELDSET_METADATA_OPTIONS">
+		<fieldset name="jmetadata" label="JGLOBAL_FIELDSET_METADATA_OPTIONS">
+			<field
+				name="robots"
+				type="list"
+				label="JFIELD_METADATA_ROBOTS_LABEL"
+				description="JFIELD_METADATA_ROBOTS_DESC"
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="index, follow">JGLOBAL_INDEX_FOLLOW</option>
+				<option value="noindex, follow">JGLOBAL_NOINDEX_FOLLOW</option>
+				<option value="index, nofollow">JGLOBAL_INDEX_NOFOLLOW</option>
+				<option value="noindex, nofollow">JGLOBAL_NOINDEX_NOFOLLOW</option>
+			</field>
+			<field
+				name="rights"
+				type="text"
+				label="JFIELD_METADATA_RIGHTS_LABEL"
+				description="JFIELD_METADATA_RIGHTS_DESC"
+				size="20"
+			/>
+		</fieldset>
+	</fields>##{end_metadata}####form##
+</form>

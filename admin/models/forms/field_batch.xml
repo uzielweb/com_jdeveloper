@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field 
+			name="table"
+			type="jdevelopertables"
+			label="COM_JDEVELOPER_FIELD_FIELD_TABLE_LABEL"
+			description="COM_JDEVELOPER_FIELD_FIELD_TABLE_DESC"
+			class="inputbox"
+			required="true"
+		>
+			<option value="">COM_JDEVELOPER_KEEP</option>
+		</field>
+		<field 
+			name="type"
+			type="jformfields"
+			label="COM_JDEVELOPER_FIELD_FIELD_TYPE_LABEL"
+			description="COM_JDEVELOPER_FIELD_FIELD_TYPE_DESC"
+			class="inputbox"
+			default=""
+		>
+			<option value="">COM_JDEVELOPER_KEEP</option>
+		</field>
+		<field 
+			name="dbtype"
+			type="list"
+			label="COM_JDEVELOPER_FIELD_FIELD_DBTYPE_LABEL"
+			description="COM_JDEVELOPER_FIELD_FIELD_DBTYPE_DESC"
+			class="inputbox"
+			default=""
+		>
+			<option value="">COM_JDEVELOPER_KEEP</option>
+			<option value="TINYINT">TINYINT</option>
+			<option value="SMALLINT">SMALLINT</option>
+			<option value="MEDIUMINT">MEDIUMINT</option>
+			<option value="INT">INT</option>
+			<option value="BIGINT">BIGINT</option>
+			<option value="DECIMAL">DECIMAL</option>
+			<option value="FLOAT">FLOAT</option>
+			<option value="DOUBLE">DOUBLE</option>
+			<option value="REAL">REAL</option>
+			<option value="BIT">BIT</option>
+			<option value="BOOLEAN">BOOLEAN</option>
+			<option value="SERIAL">SERIAL</option>
+			<option value="DATE">DATE</option>
+			<option value="DATETIME">DATETIME</option>
+			<option value="TIMESTAMP">TIMESTAMP</option>
+			<option value="TIME">TIME</option>
+			<option value="YEAR">YEAR</option>
+			<option value="CHAR">CHAR</option>
+			<option value="VARCHAR">VARCHAR</option>
+			<option value="TINYTEXT">TINYTEXT</option>
+			<option value="TEXT">TEXT</option>
+			<option value="MEDIUMTEXT">MEDIUMTEXT</option>
+			<option value="LONGTEXT">LONGTEXT</option>
+		</field>
+		<field 
+			name="rule"
+			type="jformrules"
+			label="COM_JDEVELOPER_FIELD_FIELD_RULE_LABEL"
+			description="COM_JDEVELOPER_FIELD_FIELD_RULE_DESC"
+			required="on"
+			class="inputbox"
+		>
+			<option value="">COM_JDEVELOPER_KEEP</option>
+		</field>
+		<field 
+			name="filter"
+			type="list"
+			label="COM_JDEVELOPER_FIELD_FIELD_FILTER_LABEL"
+			description="COM_JDEVELOPER_FIELD_FIELD_FILTER_DESC"
+			required="on"
+			class="inputbox"
+		>
+			<option value="">COM_JDEVELOPER_KEEP</option>
+			<option value="INTEGER">INTEGER</option>
+			<option value="UINT">UINT</option>
+			<option value="DOUBLE">DOUBLE</option>
+			<option value="BOOLEAN">BOOLEAN</option>
+			<option value="WORD">WORD</option>
+			<option value="ALNUM">ALNUM</option>
+			<option value="BASE64">BASE64</option>
+			<option value="STRING">STRING</option>
+			<option value="HTML">HTML</option>
+			<option value="PATH">PATH</option>
+			<option value="USERNAME">USERNAME</option>
+			<option value="RAW">RAW</option>
+			<option value="URL">URL</option>
+		</field>
+		<field 
+			name="sortable"
+			type="radio"
+			label="COM_JDEVELOPER_FIELD_FIELD_SORTABLE_LABEL"
+			description="COM_JDEVELOPER_FIELD_FIELD_SORTABLE_DESC"
+			class="btn-group"
+			default=""
+		>
+			<option value="">COM_JDEVELOPER_KEEP</option>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field 
+			name="frontend_list"
+			type="radio"
+			label="COM_JDEVELOPER_FIELD_FIELD_FRONTEND_LIST_LABEL"
+			description="COM_JDEVELOPER_FIELD_FIELD_FRONTEND_LIST_DESC"
+			class="btn-group"
+			default=""
+		>
+			<option value="">COM_JDEVELOPER_KEEP</option>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field 
+			name="frontend_item"
+			type="radio"
+			label="COM_JDEVELOPER_FIELD_FIELD_FRONTEND_ITEM_LABEL"
+			description="COM_JDEVELOPER_FIELD_FIELD_FRONTEND_ITEM_DESC"
+			class="btn-group"
+			default=""
+		>
+			<option value="">COM_JDEVELOPER_KEEP</option>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field 
+			name="listfilter"
+			type="radio"
+			label="COM_JDEVELOPER_FIELD_FIELD_LISTFILTER_LABEL"
+			description="COM_JDEVELOPER_FIELD_FIELD_LISTFILTER_DESC"
+			class="btn-group"
+			default=""
+		>
+			<option value="">COM_JDEVELOPER_KEEP</option>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field 
+			name="readonly"
+			type="radio"
+			label="COM_JDEVELOPER_FIELD_FIELD_READONLY_LABEL"
+			description="COM_JDEVELOPER_FIELD_FIELD_READONLY_DESC"
+			class="btn-group"
+			default=""
+		>
+			<option value="">COM_JDEVELOPER_KEEP</option>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field
+			name="disabled"
+			type="radio"
+			label="COM_JDEVELOPER_FIELD_FIELD_DISABLED_LABEL"
+			description="COM_JDEVELOPER_FIELD_FIELD_DISABLED_DESC"
+			class="btn-group"
+			default=""
+		>
+			<option value="">COM_JDEVELOPER_KEEP</option>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field 
+			name="required"
+			type="radio"
+			label="COM_JDEVELOPER_FIELD_FIELD_REQUIRED_LABEL"
+			description="COM_JDEVELOPER_FIELD_FIELD_REQUIRED_DESC"
+			class="btn-group"
+			default=""
+		>
+			<option value="">COM_JDEVELOPER_KEEP</option>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field 
+			name="is_param"
+			type="radio"
+			label="COM_JDEVELOPER_FIELD_FIELD_IS_PARAM_LABEL"
+			description="COM_JDEVELOPER_FIELD_FIELD_IS_PARAM_DESC"
+			class="btn-group"
+			default=""
+		>
+			<option value="">COM_JDEVELOPER_KEEP</option>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field 
+			name="maxlength"
+			type="text"
+			label="COM_JDEVELOPER_FIELD_FIELD_MAXLENGTH_LABEL"
+			description="COM_JDEVELOPER_FIELD_FIELD_MAXLENGTH_DESC"
+			filter="integer"
+			class="inputbox"
+			default=""
+		/>
+		<field 
+			name="default"
+			type="text"
+			label="COM_JDEVELOPER_FIELD_FIELD_DEFAULT_LABEL"
+			description="COM_JDEVELOPER_FIELD_FIELD_DEFAULT_DESC"
+			filter="integer"
+			class="inputbox"
+			default=""
+		/>
+		<field 
+			name="class"
+			type="text"
+			label="COM_JDEVELOPER_FIELD_FIELD_CLASS_LABEL"
+			description="COM_JDEVELOPER_FIELD_FIELD_CLASS_DESC"
+			size="30"
+			class="inputbox"
+			default=""
+		/>
+		<field 
+			name="size"
+			type="text"
+			label="COM_JDEVELOPER_FIELD_FIELD_SIZE_LABEL"
+			description="COM_JDEVELOPER_FIELD_FIELD_SIZE_DESC"
+			filter="integer"
+			class="inputbox"
+			default=""
+		/>
+	</fieldset>
+</form>

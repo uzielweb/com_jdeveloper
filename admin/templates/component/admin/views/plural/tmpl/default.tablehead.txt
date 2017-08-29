@@ -1,0 +1,4 @@
+
+				<th class="nowrap left">
+					<?php echo JHtml::_('grid.sort', JText::_('COM_##COMPONENT##_##TABLE##_FIELD_##FIELD##_LABEL'), 'a.##field##', $listDirn, $listOrder) ?>
+				</th>

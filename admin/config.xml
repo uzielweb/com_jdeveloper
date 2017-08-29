@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+	<fieldset name="jdeveloper"
+		label="COM_JDEVELOPER_CONFIG_FIELDSET_JDEVELOPER_LABEL"
+		description="COM_JDEVELOPER_CONFIG_FIELDSET_JDEVELOPER_DESC">
+		<field name="delete_old_components"
+			type="radio"
+			class="btn-group"
+			default="0"
+			label="COM_JDEVELOPER_CONFIG_FIELD_DELETEOLDCOMPONENTS_LABEL"
+			description="COM_JDEVELOPER_CONFIG_FIELD_DELETEOLDCOMPONENTS_DESC"
+		>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="userarchives"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_JDEVELOPER_CONFIG_FIELD_USERARCHIVES_LABEL"
+			description="COM_JDEVELOPER_CONFIG_FIELD_USERARCHIVES_DESC"
+		>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="delete_tables"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_JDEVELOPER_CONFIG_FIELD_DELETETABLES_LABEL"
+			description="COM_JDEVELOPER_CONFIG_FIELD_DELETETABLES_DESC"
+		>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="delete_fields"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_JDEVELOPER_CONFIG_FIELD_DELETEFIELDS_LABEL"
+			description="COM_JDEVELOPER_CONFIG_FIELD_DELETEFIELDS_DESC"
+		>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field type="spacer" />
+		<field name="add_component_name_to_table_name"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_JDEVELOPER_CONFIG_FIELD_COMPONENTNAMETOTABLE_LABEL"
+			description="COM_JDEVELOPER_CONFIG_FIELD_COMPONENTNAMETOTABLE_DESC"
+		>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+	</fieldset>
+	<fieldset name="component" label="COM_JDEVELOPER_CONFIG_FIELDSET_COMPONENT_LABEL"	description="COM_JDEVELOPER_CONFIG_FIELDSET_COMPONENT_DESC">
+   		<field
+			name="author"
+			type="text"
+			default=""
+			label="COM_JDEVELOPER_COMPONENT_FIELD_AUTHOR_LABEL"
+			description="COM_JDEVELOPER_COMPONENT_FIELD_AUTHOR_DESC"
+		/>
+   		<field
+			name="author_email"
+			type="text"
+			default=""
+			label="COM_JDEVELOPER_COMPONENT_FIELD_AUTHOREMAIL_LABEL"
+			description="COM_JDEVELOPER_COMPONENT_FIELD_AUTHOREMAIL_DESC"
+		/>
+   		<field
+			name="author_url"
+			type="text"
+			default="http://www.joommaster.bplaced.net"
+			label="COM_JDEVELOPER_COMPONENT_FIELD_AUTHORURL_LABEL"
+			description="COM_JDEVELOPER_COMPONENT_FIELD_AUTHORURL_DESC"
+		/>
+   		<field
+			name="copyright"
+			type="text"
+			default=""
+			label="COM_JDEVELOPER_COMPONENT_FIELD_COPYRIGHT_LABEL"
+			description="COM_JDEVELOPER_COMPONENT_FIELD_COPYRIGHT_DESC"
+		/>
+   		<field
+			name="license"
+			type="text"
+			default="GNU General Public License version 2 or later"
+			label="COM_JDEVELOPER_COMPONENT_FIELD_LICENCE_LABEL"
+			description="COM_JDEVELOPER_COMPONENT_FIELD_LICENCE_DESC"
+		/>
+   </fieldset>
+   <fieldset name="permissions"	label="JCONFIG_PERMISSIONS_LABEL" description="JCONFIG_PERMISSIONS_DESC" >
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			class="inputbox"
+			filter="rules"
+			validate="rules"
+			component="com_jdeveloper"
+			section="component" 
+		/>
+	</fieldset>
+</config>

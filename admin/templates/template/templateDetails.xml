@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" method="upgrade" type="template" client="site">
+	<name>##name##</name>
+	<version>##version##</version>
+	<creationDate>##creationdate##</creationDate>
+	<authorEmail>##author_email##</authorEmail>
+	<authorUrl>##author_url##</authorUrl>
+	<copyright>##copyright##</copyright>
+	<license>##licence##</license>
+	<description>TPL_##NAME##_XML_DESCRIPTION</description>
+	<files>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>language</folder>
+		<folder>less</folder>
+	</files>
+	<positions>
+		<position>banner</position>
+		<position>debug</position>
+		<position>position-0</position>
+		<position>position-1</position>
+		<position>position-2</position>
+		<position>position-3</position>
+		<position>position-4</position>
+		<position>position-5</position>
+		<position>position-6</position>
+		<position>position-7</position>
+		<position>position-8</position>
+		<position>position-9</position>
+		<position>position-10</position>
+		<position>position-11</position>
+		<position>position-12</position>
+		<position>position-13</position>
+		<position>position-14</position>
+		<position>footer</position>
+	</positions>
+	<languages folder="language">##languages##
+	</languages>
+	<config>##configfields##
+		<fields name="params">
+			<fieldset name="advanced">
+				<field name="templateColor" class="" type="color" default="#08C"
+					label="TPL_##NAME##_COLOR_LABEL"
+					description="TPL_##NAME##_COLOR_DESC" />
+
+				<field name="templateBackgroundColor" class="" type="color" default="#F4F6F7"
+					label="TPL_##NAME##_BACKGROUND_COLOR_LABEL"
+					description="TPL_##NAME##_BACKGROUND_COLOR_DESC" />
+
+				<field name="logoFile" class="" type="media" default=""
+					label="TPL_##NAME##_LOGO_LABEL"
+					description="TPL_##NAME##_LOGO_DESC" />
+					
+				<field name="sitetitle"  type="text" default=""
+					label="JGLOBAL_TITLE"
+					description="JFIELD_ALT_PAGE_TITLE_LABEL"
+					filter="string" />
+
+				<field name="sitedescription"  type="text" default=""
+					label="JGLOBAL_DESCRIPTION"
+					description="JGLOBAL_SUBHEADING_DESC"
+					filter="string" />
+
+				<field name="googleFont"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="TPL_##NAME##_FONT_LABEL"
+					description="TPL_##NAME##_FONT_DESC"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field name="googleFontName" class="" type="text" default="Open+Sans"
+					label="TPL_##NAME##_FONT_NAME_LABEL"
+					description="TPL_##NAME##_FONT_NAME_DESC" />
+
+				<field name="fluidContainer"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="0"
+					label="TPL_##NAME##_FLUID_LABEL"
+					description="TPL_##NAME##_FLUID_DESC"
+				>
+					<option value="1">TPL_##NAME##_FLUID</option>
+					<option value="0">TPL_##NAME##_STATIC</option>
+				</field>
+			</fieldset>
+		</fields>##configform##
+	</config>
+</extension>

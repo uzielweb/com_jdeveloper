@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field 
+			name="manifest"
+			type="file"
+			label="COM_JDEVELOPER_IMPORT_FIELD_MANIFEST_LABEL"
+			description="COM_JDEVELOPER_IMPORT_FIELD_MANIFEST_DESC"
+			accept="application/xml"
+		/>
+		<field
+			name="dbtable"
+			type="dbtables"
+			label="COM_JDEVELOPER_IMPORT_FIELD_DBTABLES_LABEL"
+			description="COM_JDEVELOPER_IMPORT_FIELD_DBTABLES_DESC"
+		/>
+		<field 
+			name="extension"
+			type="extensions"
+			label="COM_JDEVELOPER_IMPORT_FIELD_EXTENSIONS_LABEL"
+			description="COM_JDEVELOPER_IMPORT_FIELD_EXTENSIONS_DESC"
+			default=""
+			components="true"
+			modules="false"
+			plugins="false"
+			templates="false"
+		>
+			<option value=""></option>
+		</field>
+		<field 
+			name="component"
+			type="component"
+			label="COM_JDEVELOPER_TABLE_FIELD_COMPONENT_LABEL"
+			description="COM_JDEVELOPER_TABLE_FIELD_COMPONENT_DESC"
+			default=""
+		>
+			<option value=""></option>
+		</field>
+		<field 
+			name="formfile"
+			type="file"
+			label="COM_JDEVELOPER_IMPORT_FIELD_FORMFILE_LABEL"
+			description="COM_JDEVELOPER_IMPORT_FIELD_FORMFILE_DESC"
+			accept="application/xml"
+			filter="raw"
+		/>
+		<field 
+			name="table"
+			type="jdevelopertables"
+			label="COM_JDEVELOPER_FIELD_FIELD_TABLE_LABEL"
+			description="COM_JDEVELOPER_FIELD_FIELD_TABLE_DESC"
+			class="inputbox"
+			required="true"
+		>
+			<option value=""></option>
+		</field>
+		<field 
+			name="table_plural"
+			type="text"
+			label="COM_JDEVELOPER_TABLE_FIELD_PLURAL_LABEL"
+			description="COM_JDEVELOPER_TABLE_FIELD_PLURAL_DESC"
+			class="inputbox"
+		/>
+		<field 
+			name="table_singular"
+			type="text"
+			label="COM_JDEVELOPER_TABLE_FIELD_SINGULAR_LABEL"
+			description="COM_JDEVELOPER_TABLE_FIELD_SINGULAR_DESC"
+			class="inputbox"
+		/>
+	</fieldset>
+</form>

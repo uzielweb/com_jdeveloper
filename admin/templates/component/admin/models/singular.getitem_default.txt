@@ -1,0 +1,35 @@
+	/**
+	 * Method to get a single record.
+	 *
+	 * @param	integer	The id of the primary key.
+	 *
+	 * @return	mixed	Object on success, false on failure.
+	 * @since	1.6
+	 */
+	public function getItem($pk = null)
+	{
+		if (!$item = parent::getItem($pk))
+		{			
+			throw new Exception('Failed to load item');
+		}##{start_table_nested}##
+		
+		if (empty($result->##pk##))
+		{
+			$result->parent_id = $this->getState('##singular##.parent_id');
+		}##{end_table_nested}##
+
+		if (!$item->##pk##)
+		{##{start_created_by}##
+			$item->created_by = JFactory::getUser()->get('##pk##');##{end_created_by}####{start_modified_by}##
+			$item->modified_by = JFactory::getUser()->get('##pk##');##{end_modified_by}##
+		}##{start_tags}##
+		
+		if (!empty($item->##pk##))
+		{
+			$item->tags = new JHelperTags;
+			$item->tags->getTagIds($item->##pk##, $this->typeAlias);
+			$item->metadata['tags'] = $item->tags;
+		}##{end_tags}##
+		
+		return $item;
+	}

@@ -1,0 +1,4 @@
+		//Join over ##rel_plural##
+		$query->select('##rel_alias##.##rel_mainfield## AS ' . $db->quote('##rel_mainfield_alias##'))
+			->join('LEFT', '#__##rel_table_db## AS ##rel_alias## ON ##rel_alias##.##rel_pk## = a.##table_relfield##');
+

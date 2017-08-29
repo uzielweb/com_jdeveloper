@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field 
+			name="folder"
+			type="list"
+			label="COM_JDEVELOPER_PLUGIN_FIELD_TYPE_LABEL"
+			description="COM_JDEVELOPER_PLUGIN_FIELD_TYPE_DESC"
+			default=""
+			required="1"
+		>
+			<option value=""></option>
+			<option value="authentication">Authentication</option>
+			<option value="captcha">Captcha</option>
+			<option value="content">Content</option>
+			<option value="editors">Editors</option>
+			<option value="editors-xtd">Editors-Xtd</option>
+			<option value="extension">Extension</option>
+			<option value="finder">Finderd</option>
+			<option value="quickicon">Quickicon</option>
+			<option value="search">Search</option>
+			<option value="system">System</option>
+			<option value="user">User</option>
+		</field>
+	</fieldset>
+</form>

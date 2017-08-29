@@ -1,0 +1,4 @@
+		// Set filter state for ##field##
+		$##field## = $this->getUserStateFromRequest($this->context.'.filter.##field##', 'filter_##field##', '');
+		$this->setState('filter.##field##', $##field##);
+		

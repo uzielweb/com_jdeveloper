@@ -1,0 +1,1 @@
+ALTER TABLE `#__jdeveloper_components` DROP `ordering`

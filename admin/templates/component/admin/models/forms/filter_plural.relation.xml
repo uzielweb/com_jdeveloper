@@ -1,0 +1,12 @@
+
+		<field 
+			name="##rel_name##"
+			type="##rel_name##"
+			label="COM_##COMPONENT##_##SINGULAR##_FIELD_##REL_NAME##_LABEL"
+			description="COM_##COMPONENT##_##SINGULAR##_FIELD_##REL_NAME##_DESC"
+			default=""
+			required="1"
+			onchange="this.form.submit();"
+		>
+			<option value="">COM_##COMPONENT##_##PLURAL##_FIELD_##REL_NAME##_FILTER</option>
+		</field>

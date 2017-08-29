@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.0">
+	<name>##name##</name>
+	<creationDate>##date##</creationDate>
+	<packagename>##name##</packagename>
+	<version>##version##</version>
+	<copyright>##copyright##</copyright>	
+	<license>##license##</license>	
+	<packager>##author##</packager>
+	<packageremail>##author_email##</packageremail>
+	<packagerurl>##author_url##</packagerurl>
+	<description>##description##</description>
+	<update></update>
+	<files>
+		##files##
+	</files>
+</extension>
